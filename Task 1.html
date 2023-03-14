@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sidehustle internship task 1</title>
-</head>
-<body>
-   <h1>ASSIGNMENT</h1>
-   <form action="" method="post">
-    <label for=""></label>
-   </form> 
-</body>
+  </head>
+  <body
+    style="
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 15px;"
+  >
+    <h1 style="font-size: 20px; text-decoration: underline; font-style: italic">
+      ASSIGNMENT
+    </h1>
+    <form action="#" method="post" onsubmit="sidehustle();">
+      <label for="name" aria-required="true">Name: (required)</label>
+      <input
+        type="text"
+        id="name"
+        class="name"
+        placeholder="Name"
+        required="true"
+      />
+      <br />
+      <label for="email" aria-required="true">Email: (required)</label>
+      <input
+        type="email"
+        id="email"
+        class="email"
+        placeholder="username@example.com"
+        required="true"
+      />
+      <br />
+      <label for="phone number" aria-required="true"
+        >Phone Number: (required)</label
+      >
+      <input
+        type="tel"
+        id="phone number"
+        class="phone number"
+        placeholder="+234"
+        required="true"
+      />
+      <br />
+      <label for="gender" aria-required="true">MALE: (required)</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender"
+        value="Male"
+        required="true"
+      />
+      <label for="gender" aria-required="true">FEMALE: (required)</label>
+      <input
+        type="radio"
+        name="gender"
+        id="gender"
+        value="Male"
+        required="true"
+      />
+      <br />
+      <label for="password" aria-required="true">Password: (required)</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required="true"
+        class="password"
+      />
+      <input type="submit" value="Submit" name="submit" />
+      <script type="text/javascript">
+        function sidehustle() {
+          alert("Form Successfully Submitted");
+        }
+      </script>
+      <hr />
+    </form>
+  </body>
 </html>
